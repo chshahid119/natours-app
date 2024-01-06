@@ -4,7 +4,7 @@
   "description": "natours web app for understanding sass css",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
   },
   "repository": {
     "type": "git",
@@ -17,8 +17,5 @@
   "license": "ISC",
   "devDependencies": {
     "node-sass": "^9.0.0"
-  },
-  "dependencies": {
-    "jquery": "^3.7.1"
   }
 }
