@@ -27,6 +27,7 @@
   /* syntax---> polygon(HideFromX-axis HideFromY-axis,HideFromX-axis HideFromY-axis,HideFromX-axis HideFromY-axis,HideFromX-axis HideFromY-axis)  */
   /* clip-path: polygon(0 0, 100% 0, 100% 200px, 0 100%); */
   /* -------------------------------------------------- */
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 
   &__logo-box {
