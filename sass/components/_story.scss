@@ -2,6 +2,7 @@
   width: 75%;
   margin: 0 auto;
   box-shadow: 0 3rem 6rem rgba($color-black, 0.1);
+  background-color: rgba($color-white, 0.6);
   border-radius: 0.3rem;
   padding: 6rem;
   padding-left: 9rem;
@@ -20,11 +21,42 @@
 
     clip-path: circle(50% at 50% 50%);
     transform: translateX(-3rem) skewX(12deg);
+    position: relative;
   }
   &__img {
     height: 100%;
+    transform: translateX(-4rem) scale(1.4);
+    // again here use it to remove background visibility
+    backface-visibility: hidden;
+    transition: all 0.5s;
   }
   &__text {
     transform: skewX(12deg);
+    &--p {
+      font-weight: 400;
+    }
+  }
+  &__caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    color: $color-white;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.5s;
+    // Use that property to remove shaking in animation at the end while text come upward like in header
+    backface-visibility: hidden;
+  }
+
+  &:hover &__caption {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+  &:hover &__img {
+    transform: translateX(-4rem) scale(1);
+    filter: blur(0.3rem) brightness(1);
   }
 }
