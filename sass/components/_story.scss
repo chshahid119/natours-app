@@ -1,14 +1,30 @@
-.story{
-    width: 75%;
-    margin: 0 auto;
-    box-shadow: 0 3rem 6rem rgba($color-black,.1);
-    border-radius: 3px;
-    padding: 6rem;
+.story {
+  width: 75%;
+  margin: 0 auto;
+  box-shadow: 0 3rem 6rem rgba($color-black, 0.1);
+  border-radius: 0.3rem;
+  padding: 6rem;
+  padding-left: 9rem;
+  font-size: $default-font-size;
+  transform: skewX(-12deg);
 
-    &__shape{
-        width: 15rem;
-        height: 15rem;
-        float: left;
-        background-color: orangered;
-    }
+  &__shape {
+    width: 15rem;
+    height: 15rem;
+
+    float: left;
+    // it basically changes the outside shape of an element that makes the text circle
+    // To use that property three properites are necessary: float,width and height (there fore we use it in there)
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+
+    clip-path: circle(50% at 50% 50%);
+    transform: translateX(-3rem) skewX(12deg);
+  }
+  &__img {
+    height: 100%;
+  }
+  &__text {
+    transform: skewX(12deg);
+  }
 }
