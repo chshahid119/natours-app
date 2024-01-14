@@ -17,21 +17,28 @@
   </head>
   <body>
     <div class="navigation">
-      <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
       <label for="navi-toggle" class="navigation__button">
-        <span class="navigation__icon">
-          &nbsp;
-        </span>
+        <span class="navigation__icon"> &nbsp; </span>
       </label>
       <div class="navigation__background">&nbsp;</div>
       <nav class="navigation__nav">
         <ul class="navigation__list">
-          <li class="navigation__item"><a href="#" class="navigation__link">About Natours</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link">Your benefits</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link">Popular tours</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link">Stories</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link">Book Now</a></li>
-         
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">About Natours</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Your benefits</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Popular tours</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Stories</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Book Now</a>
+          </li>
         </ul>
       </nav>
     </div>
@@ -46,7 +53,9 @@
           <span class="heading-primary--sub">is where life happens</span>
         </h1>
 
-        <a href="#" class="btn btn--white btn--animated">Discover our tours</a>
+        <a href="#section-tours" class="btn btn--white btn--animated"
+          >Discover our tours</a
+        >
       </div>
     </header>
     <main>
@@ -153,7 +162,7 @@
 
       <!-- Section tours start from there  -->
       <!-- First Card is that  -->
-      <section class="section-tours">
+      <section class="section-tours" id="section-tours">
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">Most Popular tours</h2>
         </div>
@@ -181,9 +190,9 @@
                 <div class="card__cta">
                   <div class="card__price--box">
                     <p class="card__price--only">Only</p>
-                    <p class="card__price--value">$297</p>
+                    <p class="card__price--value">$ 297</p>
                   </div>
-                  <a href="#" class="btn btn--white">Book now!</a>
+                  <a href="#popup" class="btn btn--white">Book now!</a>
                 </div>
               </div>
             </div>
@@ -214,9 +223,9 @@
                   <div class="card__cta">
                     <div class="card__price--box">
                       <p class="card__price--only">Only</p>
-                      <p class="card__price--value">$297</p>
+                      <p class="card__price--value">$ 397</p>
                     </div>
-                    <a href="#" class="btn btn--white">Book now!</a>
+                    <a href="#popup" class="btn btn--white">Book now!</a>
                   </div>
                 </div>
               </div>
@@ -248,9 +257,9 @@
                   <div class="card__cta">
                     <div class="card__price--box">
                       <p class="card__price--only">Only</p>
-                      <p class="card__price--value">$297</p>
+                      <p class="card__price--value">$ 497</p>
                     </div>
-                    <a href="#" class="btn btn--white">Book now!</a>
+                    <a href="#popup" class="btn btn--white">Book now!</a>
                   </div>
                 </div>
               </div>
@@ -398,29 +407,76 @@
     <!-- Footer Section Start from there  -->
     <footer class="footer">
       <div class="footer__logo-box">
-        <img src="./img/logo-green-2x.png" alt="Natours app green logo" class="footer__logo">
+        <img
+          src="./img/logo-green-2x.png"
+          alt="Natours app green logo"
+          class="footer__logo"
+        />
       </div>
       <div class="row">
         <div class="col-1-of-2">
           <div class="footer__navigation">
             <ul class="footer__list">
-              <li class="footer__item"><a href="#" class="footer__link">Company</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Contact us</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Careers</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Privacy</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Terms</a></li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Company</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Contact us</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Careers</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Privacy</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Terms</a>
+              </li>
             </ul>
           </div>
         </div>
         <div class="col-1-of-2">
           <p class="footer__copyright">
-            Built by <a href="#" class="footer__link">Natours</a> Group of Companies.
-             All CopyRights&#169; reserved by the Natours Companies of hoteling and tours.The design 
-             credit must be goes to Jonas Schmedtman!
+            Built by <a href="#" class="footer__link">Natours</a> Group of
+            Companies. All CopyRights&#169; reserved by the Natours Companies of
+            hoteling and tours.The design credit must be goes to Jonas
+            Schmedtman!
           </p>
         </div>
       </div>
     </footer>
+
+    <div class="popup" id="popup">
+      <div class="popup__content">
+        <div class="popup__left">
+          <img src="img/nat-8.jpg " alt="tour Photo" class="popup__img" />
+          <img src="img/nat-9.jpg " alt="tour Photo" class="popup__img" />
+        </div>
+        <div class="popup__right">
+          <a href="#section-tours" class="popup__close">&times;</a>
+          <h2 class="heading-secondary u-margin-bottom-small">
+            Start booking now
+          </h2>
+          <h3 class="heading-tertiary u-margin-bottom-small">
+            Important &ndash; Please read these terms before booking
+          </h3>
+          <p class="popup__text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum vero
+            nostrum repellat consequatur, ea dolor numquam nulla provident!
+            Saepe, excepturi laboriosam dolorem quas cumque possimus, rerum
+            vitae ut magnam nihil dolore minima distinctio omnis ea autem
+            tenetur veniam facere fugiat. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Ipsa dolorem laborum reiciendis accusantium fugit
+            quas earum aut. Cupiditate officia quis et quia dolorem quas vitae.
+            Distinctio dolor tempore mollitia doloremque repudiandae repellendus
+            fugit nisi impedit. Lorem ipsum dolor, sit amet consectetur
+            adipisicing elit. Dolorem, veritatis praesentium laboriosam saepe
+            aut sapiente perspiciatis laudantium? Perferendis, dolores quos!
+          </p>
+          <a href="#" class="btn btn--green">Book now</a>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
 
