@@ -460,9 +460,6 @@ body {
   width: 65%;
   display: block;
   transition: all 0.3s; }
-  @media (max-width: 56.25em) {
-    .form__input {
-      width: 100%; } }
   .form__input:focus {
     outline: none;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
@@ -613,13 +610,12 @@ body {
   transform: skewX(-12deg); }
   @media (max-width: 56.25em) {
     .story {
-      width: 100%;
       padding: 4rem;
       padding-left: 7rem; } }
   @media (max-width: 37.5em) {
     .story {
       transform: skewX(0);
-      padding: 3rem; } }
+      padding: 4rem; } }
   .story__shape {
     width: 15rem;
     height: 15rem;

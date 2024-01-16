@@ -16,9 +16,9 @@
     display: block;
     transition: all 0.3s;
 
-    @include respond(tab-port) {
-      width: 100%;
-    }
+    // @include respond(tab-port) {
+    //   width: 100%;
+    // }
 
     &:focus {
       outline: none;
