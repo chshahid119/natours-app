@@ -8,6 +8,19 @@ html {
   // This defines what 1rem is (by default 1rem=16px)
   font-size: 62.5%; // 10/16*100=62.5=1rem=10px
   scroll-behavior: smooth;
+  //tab-land= 1200px
+  @include respond(tab-land) {
+    font-size: 56.25%; //1rrem=9px,9/16=50%
+  }
+  //tab-port= 900px
+  @include respond(tab-port) {
+    font-size: 50%; //1rem=8px,8/16=50%
+  }
+
+  // big-desktop= 1800px
+  @include respond(big-desktop) {
+    font-size: 75%; //1rem=12px,12/16=75%
+  }
 }
 
 body {
