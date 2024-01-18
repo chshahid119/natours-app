@@ -4,7 +4,7 @@
   -moz-perspective: 150rem;
   position: relative;
   height: 52rem;
-  cursor: pointer;
+  cursor: pointer; 
 
   &__side {
     height: 52rem;
@@ -172,8 +172,10 @@
 
   // Tab card media query start from there
 
-  @include respond(tab-port) {
-    height: auto;
+  // @include respond(tab-port) {
+    @media only screen and (max-width:56.25em),
+    only screen and (hover:none)
+{    height: auto;
     border-radius: 0.3rem;
     background-color: $color-white;
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
