@@ -8,8 +8,8 @@
       href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
       rel="stylesheet"
     />
-
-    <link rel="stylesheet" href="css/icon-font.css" />
+<!-- We dont need that line because after build production everything is compressed into style.css file which already imported -->
+    <!-- <link rel="stylesheet" href="css/icon-font.css" /> -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
 
@@ -424,8 +424,13 @@
     <!-- Footer Section Start from there  -->
     <footer class="footer">
       <div class="footer__logo-box">
-        <img
-          src="./img/logo-green-2x.png"
+
+        <picture  class="footer__logo">
+          <!--IMAGE RESPONSIVENESS (ART DIRECTION CASE):== (change images when devices become phone using media attribute) -->
+          <source srcset="img/logo-green-small-1x.png 1x,img/logo-green-small-2x.png 2x" media="(max-width:37.5em)" >
+<!---IMAGE RESPONSIVENESS (DENSITY-SWITCHING CASE):== add density-descriptors in srcset attribute for different density Resolution screens -->
+          <img
+          srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x"
           alt="Natours app green logo"
           src="img/logo-green-2x.png"
         />

@@ -1,6 +1,12 @@
 # Ignore node_modules directory
 node_modules/
 
+#ignore project build
+css/style.comp.css/
+css/style.concat.css/
+css/style.style.css/
+css/style.prefix.css/
+
 # Ignore logs and build directories
 build/
 dist/
